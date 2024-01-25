@@ -1,6 +1,8 @@
-d=[]
-for i in range(128):
-    s=bin(i)[2::]+bin(i%4)[2::]
-    if 50<=int(s,2)<=99:
-        d.append(i)
-print(max(d),len(d))
+print('x y z w f1 f2')
+for x in range (2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                f1=(w==x) and (y<=z)
+                f2=(w<=x)<=(y==z)
+                print(x,y,z,w,f1,f2)
